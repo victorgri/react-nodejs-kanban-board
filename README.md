@@ -16,9 +16,11 @@
 - Check your node version `node -v`
 - You need node v20.10.0 and higher
 - Type `cd server`
+- Type `npm i` to install packages
 - Type `npm start` to run server
 - Open one more terminal
 - Type `cd client`
+- Type `npm i`
 - Type `npm run dev` and press on `http://localhost:5173/` to run the app on the browser
   
 ## How to use:
