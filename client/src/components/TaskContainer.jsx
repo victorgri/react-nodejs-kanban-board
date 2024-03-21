@@ -47,7 +47,7 @@ export const TaskContainer = ({socket}) => {
             className={`${task[1].title.toLowerCase()}__wrapper`}
             key={task[1].title}
           >
-            <h3>{task[1].title} Tasks</h3>
+            <h3>{task[1].columnName}</h3>
             <div className={`${task[1].title.toLowerCase()}__container`}>
               <Droppable droppableId={task[1].title}>
                 {(provided) => (
@@ -57,16 +57,17 @@ export const TaskContainer = ({socket}) => {
                         key={item.id}
                         draggableId={item.id}
                         index={index}
-                      >
+                      > 
                         {(provided) => (
-                          <div
-                            ref={provided.innerRef}
-                            {...provided.draggableProps}
-                            {...provided.dragHandleProps}
-                            className={`${task[1].title.toLowerCase()}__items`}
-                          >
-                            <p>{item.title}</p>
-                          </div>
+                            <div
+                              ref={provided.innerRef}
+                              {...provided.draggableProps}
+                              {...provided.dragHandleProps}
+                              className={`${task[1].title.toLowerCase()}__items`}
+                            >
+                              <p>{item.title}</p>
+                            </div>
+
                         )}
                       </Draggable>
                     ))}

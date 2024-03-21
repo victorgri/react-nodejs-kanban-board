@@ -17,30 +17,18 @@ const UID = () => Math.random().toString(36).substring(2, 10);
 let tasks = {
   pending: {
     title: "pending",
-    items: [
-      {
-        id: UID(),
-        title: "",
-      },
-    ],
+    columnName: "ToDo",
+    items: [],
   },
   ongoing: {
     title: "ongoing",
-    items: [
-      {
-        id: UID(),
-        title: "",
-      },
-    ],
+    columnName: "In Progress",
+    items: [],
   },
   completed: {
     title: "completed",
-    items: [
-      {
-        id: UID(),
-        title: "",
-      },
-    ],
+    columnName: "Done",
+    items: [],
   },
 };
 app.use(cors());
@@ -62,7 +50,6 @@ io.on('connection', (socket) => {
   socket.on('createTask', (data) => {
     console.log(data);
     const newTask = { id: UID(), title: data };
-    
     tasks['pending'].items.push(newTask)
 
     io.sockets.emit('tasks', tasks);
