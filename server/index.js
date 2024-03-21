@@ -20,7 +20,7 @@ let tasks = {
     items: [
       {
         id: UID(),
-        title: "Send the Figma file to Dima",
+        title: "",
       },
     ],
   },
@@ -29,7 +29,7 @@ let tasks = {
     items: [
       {
         id: UID(),
-        title: "Review GitHub issues",
+        title: "",
       },
     ],
   },
@@ -38,7 +38,7 @@ let tasks = {
     items: [
       {
         id: UID(),
-        title: "Create technical contents",
+        title: "",
       },
     ],
   },

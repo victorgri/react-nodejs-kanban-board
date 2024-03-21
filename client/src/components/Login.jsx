@@ -17,7 +17,7 @@ export const Login = () => {
   return (
     <div className="login__container">
       <form className="login__form" onSubmit={handleSubmit}>
-        <label htmlFor="username">Provide a usernaame</label>
+        <label htmlFor="username">Provide a username</label>
         <input type="text" name="username" id="username" required ref={usernameRef}/>
         <button>SIGN IN</button>
       </form>
