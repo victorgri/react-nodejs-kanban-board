@@ -3,6 +3,7 @@
 - React
 - React router
 - React beautiful dnd
+- Node.js
 - Socket.io-client
 - Socket.io
 - Cors
