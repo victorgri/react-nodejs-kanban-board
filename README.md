@@ -7,7 +7,7 @@
 - Socket.io
 - Cors
 - Express
-- 
+
 ## To run this app:
 - Clone repo
 - Open in IDE
